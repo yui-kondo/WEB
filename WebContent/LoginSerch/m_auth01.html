@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>WebDBシステム</title>
+    <style >
+        body {
+        color: #333333;
+        background-image:url(photo.jpg);
+        background-color:rgba(255,255,255,0.1);
+        background-blend-mode:lighten;
+
+        background-repeat:no-reqeat;
+        background-position: center;
+        background-size : cover;
+
+        font-family: "Hiragino Kaku Gothic Pro",Meiryo,"MS PGothic",Helvetica,Arial,sans-serif;
+        }
+
+        #content {
+            width: 94%;
+            margin-top: 15px;
+            padding-left: 3%;
+            color:#ffffff;
+        }
+
+        h1 {
+            width: 94%;
+            padding-top: 17px;
+            padding-left: 3%;
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        h4 {
+
+            color: white;
+
+        }
+    </style>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="content">
+                <h1>管理者ログイン</h1>
+                <br />
+                <br />
+                <br />
+                <br />
+
+                <form action="m_serch01.html" method="post">
+                <p>ログインID：<input type="text" name="admin_id"></p>
+                パスワード：<input type="password" name="admin_pass">&nbsp;&nbsp;&nbsp;
+                <input type="submit" class="btn btn-outline-light" name="chk_login" value="ログイン">
+                </form>
+             </div>
+        </div>
+     </body>
+</html>

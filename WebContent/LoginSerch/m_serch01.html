@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>WebDBシステム</title>
+
+        <style>
+            body {
+                color: #333333;
+                font-family: "Hiragino Kaku Gothic Pro",Meiryo,"MS PGothic",Helvetica,Arial,sans-serif;
+            }
+
+            #header {
+                width: 100%;
+                height: 30px;
+                background-color: #3366CC;
+            }
+
+            #content {
+                width: 94%;
+                margin-top: 15px;
+                padding-left: 3%;
+            }
+
+            h1 {
+                width: 94%;
+                padding-top: 17px;
+                padding-left: 3%;
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 36px;
+                margin-bottom: 15px;
+            }
+
+            h4 {
+
+                color: white;
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="header">
+                <h4>検索用フォーム</h4>
+            </div>
+            <div id="content">
+                <h1>これはMUSIC_DBデータ検索用のフォームです。</h1>
+
+                <P>下からフィールド名を選択してください。</P>
+                <p>フィールド名を選択したら、【GetList】ボタンをクリックします。</p>
+                <br />
+
+            <form action="http://localhost:8080/WebDBSystem/Getlist01" method="post">
+               <select name="category" required>
+                   <option value>ここからカテゴリ名を選んでください。</option>
+                   <option value="song">曲名</option>
+                   <option value="artist">アーティスト名</option>
+                   <option value="series">シリーズ名</option>
+                   <option value="tune">曲調</option>
+                   <option value="createday">制作日</option>
+
+                </select>
+                &nbsp; &nbsp;<input type="submit" name ="button" value="GetList">
+            </form>
+
+            </div>
+        </div>
+    </body>
+</html>
